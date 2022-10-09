@@ -2,10 +2,6 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
-* {
-  outline: 1px dashed red;
-}
-
 body {
   margin: 0;
   background: #eee;
@@ -16,10 +12,6 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px;
 }
 
 .profile-image {
@@ -43,7 +35,6 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-  margin-left: auto;
 }
 
 a {
@@ -54,16 +45,4 @@ a {
 
 ul {
   list-style-type: none;
-  display: flex;
-
-  /* Had to look at solution for the following */
-  margin: 0;
-  padding: 0;
-  gap: 16px;
-}
-
-.right, .left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
