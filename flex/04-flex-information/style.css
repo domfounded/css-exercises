@@ -1,3 +1,9 @@
+/*
+* {
+  outline: 1px dashed red;
+}
+*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +16,32 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  width: 200px;
+  text-align: center;
+}
+
+.image1, .image2, .image3, .image4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Below is what I had originally. gap:52px is what is on solution
+  margin-left: 52px;
+  margin-right: 52px;
+  */
+  gap: 52px;
 }
 
 /* do not edit this footer */
