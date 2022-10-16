@@ -25,3 +25,64 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* Trying a different layout here to show what I changed.
+I know this is not the best way to lay out CSS files. 
+I accidentally did the Landing Page project before exercise 06 and 07.
+Doing these exercises would've probably helped with my frustration on Landing Page lmao oh well. Especially would've helped with organizing the HTML part of a page for flexbox.*/
+
+li {
+  list-style: none;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+/* mid coding comment
+have everything but the sticky footer. Had issues with this on the Landing Page project too. */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* above rules fix this issue, along with adding margin-top: auto to the footer */
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  /* Two lines below will keep content verticalled centered in middle of page. */
+  justify-content: center;
+  flex: 1;
+}
+
+/* Now i am struggling with centering the flex items within the container*/
+
+ul {
+  padding: 0;
+}
+
+/* rule above solves that issue */
+
+.left-links, .right-links{
+  display: flex;
+  gap: 15px;
+  padding: 0px 15px;
+}
+
+button {
+  padding: 10px;
+}
+
+a:link, a:visited {
+  color: gray;
+  text-decoration: none;
+}
