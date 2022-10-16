@@ -26,3 +26,69 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* my solution is below */
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  /* flex: 1 below will have sidebar and cards take up all available space above the footer */
+  flex: 1;
+}
+
+.sidebar, .card {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.sidebar {
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 32px;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  height: 300px;
+}
